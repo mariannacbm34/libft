@@ -6,27 +6,36 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:03:20 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/31 15:17:54 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/10/31 17:56:31 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <strings.h>
+# include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
 
-typedef struct libft
+typedef struct s_list
 {
-	void	*content;
-	
-}				libft;
+	void			*content;
+	struct s_list	*next;
+	size_t			content_size;			
+}	t_list;
 
-
-
-
-
-
+int		ft_atoi(char *str);
+void	bzero(void *s, size_t n);
+int		ft_isalnum(int arg);
+int		ft_isalpha(int arg);
+int		ft_isascii(int arg);
+int		ft_isdigit(int arg);
+int		ft_isprint(int arg);
+void	*ft_memset(void *s, int c, size_t n);
+int		ft_strlcat(char *dest, const char *src, size_t n);
+int		ft_strlcpy(char *dest, char *src, size_t n);
+int		ft_strlen(char *str);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_tolower(int arg);
+int		ft_toupper(int arg);
 #endif
-

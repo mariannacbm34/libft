@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:53:58 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/31 15:24:22 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/10/31 16:22:21 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_strlcpy(char *dest, char *src, size_t n)
 	}
 	return (i);
 }
-
+/*
 int	main(void)
 {
 	char	*src = "0123456789";
@@ -41,3 +41,4 @@ int	main(void)
 	printf("Dest depois do ft_strlcpy: %s", dest);
 	return (0);
 }
+*/

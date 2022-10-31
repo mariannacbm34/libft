@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:48:39 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/31 15:20:07 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/10/31 17:21:26 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int	ft_isascii(int arg)
 {
-	if (arg > 0 && arg < 127)
-		return (1);
-	return (0);
+	return (arg >= 0 && arg <= 127);
 }

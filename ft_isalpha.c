@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:48:30 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/31 15:20:00 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/10/31 17:07:53 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalpha(int arg)
 {
-	if (arg >= 'a' && arg <= 'z' || arg >= 'A' && arg <= 'Z')
+	if ((arg >= 'a' && arg <= 'z') || (arg >= 'A' && arg <= 'Z'))
 		return (1);
 	return (0);
 }

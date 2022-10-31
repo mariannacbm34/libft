@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:48:06 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/31 15:30:03 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/10/31 17:53:40 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,28 @@
 
 int	ft_atoi(char *str)
 {
-	int	result;
-	int	sinal;
+	size_t	result;
+	int		sinal;
+	int		i;
 
+	i = 0;
 	sinal = 1;
 	result = 0;
-	while (*str <= 32)
-		str++;
-	while (*str && (*str == '+' || *str == '-'))
+	while (str[i] && ((str[i] > 8 && str[i] < 14) || str[i] == 32))
+		i++;
+	if (str[i] == '+' || str[i] == '-')
 	{
-		if (*str == '-')
+		if (str[i] == '-')
 			sinal = -1;
-		str++;
+		i++;
 	}
-	while (*str && (*str >= 48 && *str <= 57))
+	while (str[i] && (str[i] >= 48 && str[i] <= 57))
+		result = (result * 10) + str[i++] - 48;
+	if (i > 19 || result >= 9223372036854775808ULL)
 	{
-		result = (result * 10) + *str - 48;
-		str++;
+		if (sinal == 1)
+			return (-1);
+		return (0);
 	}
 	return (result * sinal);
 }
