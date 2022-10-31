@@ -6,11 +6,11 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 14:09:51 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/27 15:09:21 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:23:06 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_toupper(int arg)
 {

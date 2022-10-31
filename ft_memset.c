@@ -6,13 +6,15 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:51:37 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/28 14:38:31 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:21:08 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *s, int c, unsigned int long n)
+#include "libft.h"
+
+void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned int long	i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)

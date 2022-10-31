@@ -6,9 +6,11 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:48:30 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/27 12:48:31 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:20:00 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int arg)
 {

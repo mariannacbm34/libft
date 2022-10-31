@@ -6,9 +6,11 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:49:16 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/27 13:01:45 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:22:27 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(char *str)
 {

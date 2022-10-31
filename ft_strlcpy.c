@@ -6,13 +6,15 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:53:58 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/28 14:29:41 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:24:22 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlcpy(char *dest, char *src, unsigned int n)
+#include "libft.h"
+
+int	ft_strlcpy(char *dest, char *src, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	if (n > 0)
@@ -25,7 +27,7 @@ int	ft_strlcpy(char *dest, char *src, unsigned int n)
 	}
 	return (i);
 }
-/*
+
 int	main(void)
 {
 	char	*src = "0123456789";
@@ -39,4 +41,3 @@ int	main(void)
 	printf("Dest depois do ft_strlcpy: %s", dest);
 	return (0);
 }
-*/

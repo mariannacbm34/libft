@@ -6,11 +6,11 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 15:38:24 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/28 11:54:47 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:22:56 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_tolower(int arg)
 {

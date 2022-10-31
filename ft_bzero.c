@@ -6,7 +6,13 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 13:03:04 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/28 14:50:03 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:19:33 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void bzero(void *s, size_t n)
+{
+	
+}
