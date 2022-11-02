@@ -6,13 +6,13 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 13:03:04 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/31 17:10:41 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/02 11:47:24 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }

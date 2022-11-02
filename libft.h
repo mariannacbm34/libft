@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:03:20 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/31 17:56:31 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/02 11:47:36 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ typedef struct s_list
 }	t_list;
 
 int		ft_atoi(char *str);
-void	bzero(void *s, size_t n);
+void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int arg);
 int		ft_isalpha(int arg);
 int		ft_isascii(int arg);

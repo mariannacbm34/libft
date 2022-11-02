@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 11:51:45 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/28 14:50:20 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/02 11:19:39 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-    int	i;
-
-	i = 0;
-	while ((char *)s[i] && (char *)s[i] != c)
-        i++;
-    if ((char *)s[i] == c)
-        return ((char *)s[i]);
+	while (*s && *s != (unsigned char) c)
+		s++;
+	if (*s == (char) c)
+		return ((char *)s);
 	return (0);
 }

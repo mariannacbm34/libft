@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:53:58 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/31 16:22:21 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/02 12:03:39 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,9 @@ int	ft_strlcpy(char *dest, char *src, size_t n)
 			dest[i] = src[i];
 			i++;
 		}
+		dest[i] = '\0';
 	}
-	return (i);
+	return (ft_strlen(src));
 }
 /*
 int	main(void)
