@@ -13,7 +13,7 @@
 
 NAME = libft.a
 
-CC = clang
+CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror -I .
 
@@ -48,4 +48,4 @@ re:	fclean $(NAME)
 
 so:
 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
-	clang -nostartfiles -shared -o libft.so $(OBJ)
+	gcc -nostartfiles -shared -o libft.so $(OBJ)

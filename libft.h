@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:03:20 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/03 16:19:36 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/04 14:28:27 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int		ft_isdigit(int arg);
 int		ft_isprint(int arg);
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 char	*ft_strchr(const char *s, int c);
 size_t	ft_strlcat(char *dest, const char *src, size_t n);
@@ -41,4 +42,9 @@ int		ft_strlen(const char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_tolower(int arg);
 int		ft_toupper(int arg);
+char	*ft_strdup(const char *s);
+char	*ft_strchr(const char *s, int c);
+void	*ft_calloc(size_t nmemb, size_t size);
+void	*memchr(const void *s, int c, size_t n);
+char	*ft_substr(const char *str, unsigned int start, size_t len);
 #endif
