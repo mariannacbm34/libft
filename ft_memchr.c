@@ -6,12 +6,13 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 12:27:53 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/04 12:53:25 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/04 15:56:46 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include "libft.h"
+/*#include "libft.h"
 
-void	*memchr(const void *s, int c, size_t n)
-*/
+void	*ft_memchr(const void *s, int c, size_t n)
+{
+
+}*/

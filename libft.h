@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:03:20 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/04 14:28:27 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/04 15:48:32 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,6 @@ int		ft_toupper(int arg);
 char	*ft_strdup(const char *s);
 char	*ft_strchr(const char *s, int c);
 void	*ft_calloc(size_t nmemb, size_t size);
-void	*memchr(const void *s, int c, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_substr(const char *str, unsigned int start, size_t len);
 #endif
