@@ -3,10 +3,11 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 13:33:25 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/04 15:49:01 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/07 11:45:58 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//

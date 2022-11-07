@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:48:06 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/02 16:20:31 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/07 10:55:56 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,12 @@ int	ft_atoi(char *str)
 	}
 	while (str[i] && (str[i] >= 48 && str[i] <= 57))
 		result = (result * 10) + str[i++] - 48;
-	if (i > 19 || result >= 9223372036854775808ULL)
-	{
-		if (sinal == 1)
-			return (-1);
-		return (0);
-	}
+	// if (i > 19 || result >= 9223372036854775808ULL)
+	// {
+	// 	if (sinal == 1)
+	// 		return (-1);
+	// 	return (0);
+	// }
 	return (result * sinal);
 }
 /*

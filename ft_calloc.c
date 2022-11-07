@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 12:36:40 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/04 14:26:37 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/07 11:06:02 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,3 +15,7 @@
 
 void *ft_calloc(size_t nmemb, size_t size)
 */
+
+// fsanitize=adress
+
+//valgrind 
