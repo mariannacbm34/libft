@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 12:31:05 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/04 12:53:48 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:19:45 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include "libft.h"
+/*#include "libft.h"
 
 char	*ft_strdup(const char *s)
+{
+	
+}
 */
