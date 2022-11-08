@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marmonte <marmonte@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:51:37 by marmonte          #+#    #+#             */
-/*   Updated: 2022/10/31 17:09:49 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/08 11:56:30 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		((unsigned char *)s)[i] = (unsigned char) c;
+		((unsigned char *)s)[i] = c;
 		i++;
 	}
 	return (s);

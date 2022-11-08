@@ -6,14 +6,28 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 12:31:05 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/07 16:19:45 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/08 15:18:10 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include "libft.h"
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {
-	
+	int		i;
+	int		len;
+	char	*dup;
+
+	i = 0;
+	len = ft_strlen(s);
+	dup = (char *)malloc(sizeof(char) * (len + 1));
+	if (!dup)
+		return (NULL);
+	while (s[i])
+	{
+		dup[i] = s[i];
+		i++;
+	}
+	dup[i] = '\0';
+	return (dup);
 }
-*/
