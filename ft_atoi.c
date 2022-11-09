@@ -6,13 +6,13 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:48:06 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/07 14:48:26 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/09 12:26:27 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	size_t	result;
 	int		sinal;
