@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:03:20 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/09 12:26:47 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/14 12:39:15 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef struct s_list
 	size_t			content_size;			
 }	t_list;
 
+/*Parte 1*/
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int arg);
@@ -39,7 +40,7 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 size_t	ft_strlcat(char *dest, const char *src, size_t n);
 int		ft_strlcpy(char *dest, char *src, size_t n);
-int		ft_strlen(const char *str);
+size_t	ft_strlen(const char *str);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_tolower(int arg);
@@ -48,5 +49,8 @@ char	*ft_strdup(const char *s);
 char	*ft_strchr(const char *s, int c);
 void	*ft_calloc(size_t nmemb, size_t size);
 void	*ft_memchr(const void *s, int c, size_t n);
-/*char	*ft_substr(const char *str, unsigned int start, size_t len);*/
+/*Parte 2*/
+char	*ft_substr(const char *str, unsigned int start, size_t len);
+char	*ft_strtrim(const char *s1, const char *set);
+char	*ft_strjoin(const char *s1, const char *s2);
 #endif

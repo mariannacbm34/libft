@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 12:29:31 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/10 16:33:43 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/14 12:54:18 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,18 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned int    i;
-    char            *sub;
+	unsigned int	i;
+	char			*sub;
 
-    if (!s)
-        return ;
-    else if (len > ft_strlen(s))
-        len = ft_strlen(s) + 1;
-    sub  = (char *)malloc(len);
-    if (!sub)
-        return (NULL);
-    while (i < len)
-    {
-        sub[i] = s[start];
-        i++;
-        start++; 
-    }
-    return (0);
-        
+	if (!s)
+		return (0);
+	else if (len > ft_strlen(s))
+		len = ft_strlen(s) + 1;
+	sub = (char *)malloc(len + 1);
+	if (!sub)
+		return (NULL);
+	while (i < ft_strlen(s) && start < len)
+		sub[i++] = s[start++];
+	sub[i] = 0;
+	return (sub);
 }
