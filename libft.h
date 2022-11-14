@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:03:20 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/14 12:39:15 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/14 15:44:40 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
 
 typedef struct s_list
 {

@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 22:44:51 by marvin            #+#    #+#             */
-/*   Updated: 2022/11/14 15:01:39 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/14 16:45:04 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,21 +18,45 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	int		i;
 	int		a;
 
-	i = 0;
-	if (!s1 || !s2)
-		return (0);
 	join = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!join)
 		return (NULL);
-	a = 0;
-	while (s1[i])
-		join[i++] = s1[a];
-	i = 0;
-	while (s2[i])
-	{
+	i = -1;
+	while (s1[++i])
+		join[i] = s1[i];
+	a = -1;
+	while (s2[++a])
 		join[i + a] = s2[a];
-		i++;
-	}
-	join[i] = '\0';
+	join[i + a] = '\0';
 	return (join);
 }
+
+
+// #include "libft.h"
+
+// char	*ft_strjoin(const char *s1, const char *s2)
+// {
+// 	char	*str;
+// 	size_t	len;
+// 	int		i;
+// 	int		k;
+
+// 	len = ft_strlen(s1) + ft_strlen(s2) + 1;
+// 	str = (char *)malloc(sizeof(char) * len);
+// 	if (!str)
+// 		return (NULL);
+// 	i = 0;
+// 	while (s1[i])
+// 	{
+// 		str[i] = s1[i];
+// 		i++;
+// 	}
+// 	k = 0;
+// 	while (s2[k])
+// 	{
+// 		str[i + k] = s2[k];
+// 		k++;
+// 	}
+// 	str[i + k] = '\0';
+// 	return (str);
+// }
