@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 12:29:31 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/14 16:29:42 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/15 11:45:30 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,29 +42,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
-
-// #include "libft.h"
-
-// char	*ft_substr(const char *s, unsigned int start, size_t len)
-// {
-// 	char	*ptr;
-// 	size_t	i;
-// 	size_t	j;
-
-// 	if (!s)
-// 		return (0);
-// 	if (len > ft_strlen(s))
-// 		len = ft_strlen(s) + 1;
-// 	ptr = (char *)malloc(len + 1);
-// 	if (!ptr)
-// 		return (0);
-// 	i = start;
-// 	j = 0;
-// 	while (i < ft_strlen(s) && j < len)
-// 		ptr[j++] = s[i++];
-// 	ptr[j] = 0;
-// 	return (ptr);
-// }
 
 // int main (void)
 // {

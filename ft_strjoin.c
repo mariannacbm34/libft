@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 22:44:51 by marvin            #+#    #+#             */
-/*   Updated: 2022/11/14 16:45:04 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/15 12:29:54 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	join[i + a] = '\0';
 	return (join);
 }
-
 
 // #include "libft.h"
 

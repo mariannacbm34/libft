@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:03:20 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/14 15:44:40 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/15 12:31:48 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,4 +54,8 @@ void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_substr(const char *str, unsigned int start, size_t len);
 char	*ft_strtrim(const char *s1, const char *set);
 char	*ft_strjoin(const char *s1, const char *s2);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 #endif
