@@ -1,35 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/16 14:16:21 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/16 14:26:19 by marmonte         ###   ########.fr       */
+/*   Created: 2022/11/16 17:26:03 by marmonte          #+#    #+#             */
+/*   Updated: 2022/11/16 17:30:11 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	counter(const char *str, char c)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	int	counter;
-	int	find;
-	int	i;
-
-	find = 0;
-	counter = 0;
-	i = -1;
-	while (str[++i])
-	{
-		if (str[i] != c && find == 0)
-		{
-			find = 1;
-			counter++;
-		}
-		else if (str[i] == c)
-			find = 0;
-	}
-	return (counter);
+	
 }

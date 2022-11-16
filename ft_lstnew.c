@@ -1,35 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/16 14:16:21 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/16 14:26:19 by marmonte         ###   ########.fr       */
+/*   Created: 2022/11/16 16:09:28 by marmonte          #+#    #+#             */
+/*   Updated: 2022/11/16 17:22:33 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	counter(const char *str, char c)
+t_list	*ft_lstnew(void *content)
 {
-	int	counter;
-	int	find;
-	int	i;
+	t_list	*node;
 
-	find = 0;
-	counter = 0;
-	i = -1;
-	while (str[++i])
-	{
-		if (str[i] != c && find == 0)
-		{
-			find = 1;
-			counter++;
-		}
-		else if (str[i] == c)
-			find = 0;
-	}
-	return (counter);
+	node = (t_list *)malloc(sizeof(t_list));
+	if (!node)
+		return (NULL);
+	node->content = content;
+	node->next = NULL;
+	return (node);
 }
