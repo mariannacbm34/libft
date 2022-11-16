@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:03:20 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/15 12:54:34 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/15 15:28:13 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,4 +59,5 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
+char	**ft_split(char const *s, char c);
 #endif
