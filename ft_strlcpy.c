@@ -16,14 +16,11 @@ int	ft_strlcpy(char *dest, char *src, size_t n)
 {
 	size_t	i;
 
-	i = 0;
+	i = -1;
 	if (n > 0)
 	{
-		while (src[i] && i < (n - 1))
-		{
+		while (src[++i] && i < (n - 1))
 			dest[i] = src[i];
-			i++;
-		}
 		dest[i] = '\0';
 	}
 	return (ft_strlen(src));
