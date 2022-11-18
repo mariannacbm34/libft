@@ -22,6 +22,8 @@ typedef struct s_list
 	struct s_list	*next;			
 }				t_list;
 
+typedef unsigned char	t_char;
+
 /*Parte 1*/
 
 /*convert ASCII string to integer.*/
