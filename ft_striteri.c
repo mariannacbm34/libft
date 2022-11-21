@@ -1,30 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/18 15:54:00 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/21 12:48:13 by marmonte         ###   ########.fr       */
+/*   Created: 2022/11/21 12:16:46 by marmonte          #+#    #+#             */
+/*   Updated: 2022/11/21 12:16:47 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	nbr_words(int n)
-{
-	if (n < 0)
-		return (nbr_words(n * -1) + 1);
-	if (n > 9)
-		return (nbr_words(n / 10) + 1);
-	else
-		return (1);
-}
-
-char	*ft_itoa(int n)
-{
-	int		len;
-	char	*str;
-
-}
