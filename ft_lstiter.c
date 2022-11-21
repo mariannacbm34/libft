@@ -1,15 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/21 12:16:46 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/21 15:18:06 by marmonte         ###   ########.fr       */
+/*   Created: 2022/11/21 15:25:55 by marmonte          #+#    #+#             */
+/*   Updated: 2022/11/21 15:26:08 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_lstiter(t_list *lst, void (*f)(void *));

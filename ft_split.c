@@ -6,11 +6,10 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 14:16:21 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/18 15:55:52 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/21 15:18:33 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include "libft.h"
+#include "libft.h"
 
-
-*/
+char	**ft_split(char const *s, char c);
