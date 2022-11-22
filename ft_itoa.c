@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 15:54:00 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/21 15:23:33 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/21 17:48:30 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,17 @@ int	nbr_words(int n)
 	len = 0;
 	while (n)
 	{
-		if (n <= 0)
+		if (n < 0)
 		{
-			n *= -1;
+			n = n * -1;
 			len++;
 		}
 		else if (n > 0)
 		{
-			n /= 10;
+			n = n / 10;
 			len++;
 		}
-		n++;
+		return (0);
 	}
 	return (len);
 }
@@ -45,14 +45,16 @@ char	*ft_itoa(int n)
 	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
-	if (nbr <= 0)
+	if (n == -2147483648)
+		return (ft_strdup(n));
+	else if (n <= 0)
 	{
-		str[0] = '-';
-		nbr *= -1;
+		n = n * -1;
+		return (ft_strdup(n));
 	}
-	while (nbr != 0)
-		str[len] = (nbr * 10) + str[len] - 48;
-	len--;
-	str[len] = '\0';
-	return (str);
+	else if (n > 9)
+	{
+		n = n 
+	}
+
 }
