@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 15:54:00 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/21 17:48:30 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/22 13:43:24 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,17 @@ int	nbr_words(int n)
 {
 	int	len;
 
-	len = 0;
-	while (n)
+	if (n < 0)
 	{
-		if (n < 0)
-		{
-			n = n * -1;
-			len++;
-		}
-		else if (n > 0)
-		{
-			n = n / 10;
-			len++;
-		}
-		return (0);
+		n = n * -1;
+		len = 1;
+	}
+	else
+		len = 0;
+	if (n > 0)
+	{
+		n = n / 10;
+		len++;
 	}
 	return (len);
 }
@@ -38,23 +35,25 @@ char	*ft_itoa(int n)
 {
 	int		len;
 	char	*str;
-	long	nbr;
 
-	nbr = n;
-	len = nbr_words(nbr);
-	str = malloc(sizeof(char) * (len + 1));
+	len = nbr_words(n);
+	str = (char *)malloc((len + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
 	if (n == -2147483648)
-		return (ft_strdup(n));
-	else if (n <= 0)
+		return (ft_strdup("-2147483648"));
+	if (n == 0)
+		return (ft_strdup("0"));
+	if (n < 0)
 	{
-		n = n * -1;
-		return (ft_strdup(n));
+		str[0] = '-';
+		n = -n;
 	}
-	else if (n > 9)
+	while (n != 0)
 	{
-		n = n 
+		str[len--] = n % 10 + 48;
+		n /= 10;
 	}
-
+	str[len] = '\0';
+	return (str);
 }
