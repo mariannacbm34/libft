@@ -6,11 +6,12 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 14:16:21 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/23 16:28:49 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/11/29 16:21:54 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 int	count_words(const char *str, char c)
 {
@@ -33,44 +34,40 @@ int	count_words(const char *str, char c)
 	return (word);
 }
 
-char	*word_dup(char const *str, int start, int finish)
-{
-	char	*word;
-	int		i;
-
-	i = 0;
-	word = malloc(sizeof(char) * (finish - start + 1));
-	if (!word)
-		return (NULL);
-	while (start < finish)
-		word[i++] = str[start++];
-	word[i + start] = '\0';
-	return (word);
-}
-
 char	**ft_split(char const *s, char c)
 {
-	size_t	i;
-	size_t	j;
-	int		index;
-	char	**split;
+	int		i;
+	int		j;
+	int		start;
+	int		end;
+	char	**aux;
 
-	split = malloc((count_words(s, c) + 1) * sizeof(char *));
-	if (!split || !s)
+	end = count_words(s, c);
+	aux = (char **)malloc(sizeof(char *) * (end + 1));
+	if (!aux)
 		return (0);
-	i = -1;
-	j = 0;
-	index = -1;
-	while (i <= ft_strlen(s))
+	start = 0;
+	i = 0;
+	while (start < end)
 	{
-		if (s[i] != c && index < 0)
-			index = i;
-		else if ((s[++i] == c || i == ft_strlen(s)) && index >= 0)
-		{
-			split[j++] = word_dup(s, index, i);
-			index = -1;
-		}
+		j = 0;
+		while (s[i] != '\0' && s[i] == c)
+			i++;
+		while (s[j + i] != '\0' && s[j + i] != c)
+			j++;
+		aux[start++] = ft_substr(s, i, j);
+		i += j;
 	}
-	split[j] = 0;
-	return (split);
+	aux[end] = '\0';
+	return (aux);
 }
+
+// int main (int argc, char **argv)
+// {
+// 	char **ret;
+// 	int i = 0;
+
+// 	ret = ft_split(argv[1], ' ');
+// 	while (ret[i])
+// 		printf("%s\n", ret[i++]);
+// }
