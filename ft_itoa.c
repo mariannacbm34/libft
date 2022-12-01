@@ -6,13 +6,13 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 15:54:00 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/22 14:10:59 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/12/01 14:24:41 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	nbr_words(int n)
+int	nbr_char(int n)
 {
 	int	len;
 
@@ -40,7 +40,7 @@ char	*ft_itoa(int n)
 		return (ft_strdup("-2147483648"));
 	if (n == 0)
 		return (ft_strdup("0"));
-	len = nbr_words(n);
+	len = nbr_char(n);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
