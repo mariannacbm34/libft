@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
@@ -28,3 +29,18 @@ size_t	ft_strlcat(char *dest, const char *src, size_t n)
 	dest[d_size + i] = '\0';
 	return (d_size + s_size);
 }
+
+/* int main (void)
+{
+	char *dst = malloc(11);
+	char src[] = "World";
+
+	ft_strlcpy(dst, "Hello", 6);
+
+	printf("DST = %s\n", dst);
+	printf("SRC = %s\n", src);
+	ft_strlcat(dst, src, 11);
+	printf("Result = %s\n", dst);
+	free(dst);
+}
+ */

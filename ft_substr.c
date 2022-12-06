@@ -35,18 +35,18 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (sub);
 }
 
-/*int main (void)
+/* int main (void)
 {
 	char			*j;
 	unsigned int	p;
 	size_t			len;
 	char			*ret;
 
-	j = "abcdefg";
-	p = 2;
-	len = 9;
+	j = "Marianna";
+	p = 1;
+	len = 20;
 	ret = ft_substr(j, p, len);
 	printf("%s\n", ret);
 	free (ret);
 }
-*/
+ */

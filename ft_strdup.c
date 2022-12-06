@@ -28,3 +28,8 @@ char	*ft_strdup(const char *s)
 	dup[i] = '\0';
 	return (dup);
 }
+
+/*int main (void)
+{
+	printf("%s\n", ft_strdup("lovdf"));
+}*/
