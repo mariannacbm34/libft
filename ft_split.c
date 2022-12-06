@@ -6,7 +6,7 @@
 /*   By: marmonte <marmonte@student.42lisboa.com >  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 14:16:21 by marmonte          #+#    #+#             */
-/*   Updated: 2022/11/30 15:58:58 by marmonte         ###   ########.fr       */
+/*   Updated: 2022/12/06 11:51:39 by marmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char	**ft_split(char const *s, char c)
 	char	**aux;
 
 	e_words = count_words(s, c);
-	aux = (char **)malloc(sizeof(char *) * (e_words + 1));
+	aux = ft_calloc(sizeof(char *), (e_words + 1));
 	if (!aux)
 		return (0);
 	l_words = 0;
@@ -53,11 +53,23 @@ char	**ft_split(char const *s, char c)
 		j = 0;
 		while (s[i] != '\0' && s[i] == c)
 			i++;
-		while (s[j + i] != '\0' && s[j + i] != c)
+		while (s[i + j] != '\0' && s[i + j] != c)
 			j++;
 		aux[l_words++] = ft_substr(s, i, j);
-		i += j;
+		i = i + j;
 	}
-	aux[e_words] = '\0';
 	return (aux);
 }
+
+/*int main (void)
+{
+	char	**ret;
+
+	ret = ft_split("", '\0');
+	while (*ret)
+	{
+		printf("%s\n", *ret);
+		ret++;
+	}
+	return (0);
+}*/
